@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $account_type = $_POST['account_type'];
     $balance = $_POST['balance'];
 
-    $sql = "INSERT INTO accounts (customer_id, account_type, balance) VALUES ('$customer_id', '$account_type', '$balance')";
+    $sql = "INSERT INTO accounts (customer_id, account_type, balance) VALUES ('$customerS_id', '$account_type', '$balance')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Account added successfully!";
